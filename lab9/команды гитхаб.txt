@@ -1,0 +1,40 @@
+Настройка учетных данных Git
+git config --global user.name " Имя"
+git config --global user.email "email"
+
+Основные команды git
+git init
+git add .
+git commit -m "Add 1"
+git add .
+git commit -m "Add 2"
+git add .
+git commit -m "Add 3"
+git remote add test https://github.com/temkka353/test.git
+git push -u test main
+git branch branch1
+git checkout branch1
+git add .
+git commit -m "Add 11"
+git add .
+git commit -m "Add 22"
+git push -u test branch1
+git checkout main
+git branch branch2
+git checkout branch2
+git add .
+git commit -m "Add 111"
+git add .
+git commit -m "Added 222"
+git push -u test branch2
+git checkout main
+git merge branch1
+git checkout branch2
+git rebase main
+git add .
+git rebase --continue
+git add .
+git rebase --continue
+git checkout main
+git merge branch2
+git push -u lab9 main
